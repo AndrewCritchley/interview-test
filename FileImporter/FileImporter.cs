@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,31 +18,5 @@ namespace FileImporter
         {
             throw new NotImplementedException();
         }
-    }
-
-    public class ShoppaTecRepository
-    {
-        private List<User> _users;
-
-        public void AddUser(User user)
-        {
-
-        }
-
-        public IEnumerable<User> GetUsers()
-        {
-            return _users;
-        }
-    }
-
-    public class FileImportLine
-    {
-        public string EmailAddress { get; set; }
-        public string Organisation { get; set; }
-    }
-
-    public class User
-    {
-        public string EmailAddress { get; set; }
     }
 }

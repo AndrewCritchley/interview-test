@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace FileImporter.Tests
 {
-    [NUnit.Framework.TestFixture]
+    [TestFixture]
     public class FileImporterFixture
     {
         [Test]
@@ -33,21 +33,25 @@ namespace FileImporter.Tests
             repository.GetUsers().Single().Should().BeEquivalentTo(expected);
         }
 
+        [Test]
         public void It_Should_Create_The_Organisation()
         {
 
         }
 
+        [Test]
         public void It_Should_Associate_The_User_To_The_Organisation()
         {
 
         }
 
+        [Test]
         public void It_Should_Not_Add_Duplicate_Email_Addresses()
         {
 
         }
 
+        [Test]
         public void It_Should_Not_Add_Duplicate_Associations()
         {
 
